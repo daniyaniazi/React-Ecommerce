@@ -9,6 +9,17 @@
     margin: 0px 7.5px 15px;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
+    &:hover {
+        cursor: pointer;
+        & .backgroundImage {
+            transform: scale(1.1);
+            transition: all 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+        & .content {
+            opacity: 0.9;
+        }
+    }
     &.large {
         height: 380px;
     }
@@ -18,6 +29,12 @@
     &:last-child {
         margin-left: 7.5px;
     }
+    .backgroundImage {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
     .content {
         height: 90px;
         padding: 0 25px;
@@ -26,9 +43,12 @@
         align-items: center;
         justify-content: center;
         border: 1px solid #f3f3f3;
+        background-color: white;
+        opacity: 0.7;
+        position: absolute;
     }
     .title {
-        color: #f3f3f3;
+        color: black;
         font-size: 22px;
         margin-bottom: 6px;
         font-weight: bold;
@@ -36,6 +56,6 @@
     .subtitle {
         font-size: 16px;
         font-weight: lighter;
-        color: #e4e4e4;
+        color: #181818;
     }
 }
