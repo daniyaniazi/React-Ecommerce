@@ -1,0 +1,32 @@
+.collection-item {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    background-color: rgba(255, 244, 214, 0.712);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(24, 22, 22, 0.233);
+    .collection-img {
+        width: 100%;
+        height: 95%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5px;
+    }
+    .collection-footer {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        align-items: center;
+    }
+    .name {
+        width: 80%;
+        margin: 15px;
+    }
+    .price {
+        padding-right: 5px;
+    }
+}
