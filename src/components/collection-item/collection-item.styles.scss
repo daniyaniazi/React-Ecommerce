@@ -1,5 +1,5 @@
 .collection-item {
-    width: 22%;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     height: 350px;
@@ -21,7 +21,7 @@
         position: absolute;
         top: 60%;
         display: none;
-        min-height: max-content;
+        height: fit-content;
     }
     &:hover {
         .collection-img {
